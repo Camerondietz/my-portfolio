@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* Basic CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 1rem;
+        }
+
+        /* Header */
+        header {
+            position: relative; /* For positioning the home icon */
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .home-icon {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: white;
+            color: #333;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+            .home-icon:hover {
+                background-color: #e8f5e9;
+                transform: scale(1.1);
+            }
+
+        header h1 {
+            margin-top: 1.5rem; /* Adjusted to fit icon */
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e8f5e9;
+        }
+
+        /* Project Section */
+        .project {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+            .project h2 {
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #333;
+                padding-bottom: 0.5rem;
+            }
+
+            .project p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 1rem;
+                line-height: 1.8;
+            }
+
+            .project ul {
+                list-style-type: disc;
+                margin: 1rem 0 1rem 2rem;
+                color: #333;
+            }
+
+                .project ul li {
+                    margin-bottom: 0.5rem;
+                }
+
+        /* Code Section */
+        .code-block {
+            background: #f4f4f4;
+            border-left: 4px solid #333;
+            padding: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+            .code-block code {
+                display: block;
+                color: #333;
+                font-size: 0.9rem;
+            }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .project {
+                padding: 1.5rem;
+            }
+
+                .project h2 {
+                    font-size: 1.5rem;
+                }
+
+                .project p {
+                    font-size: 0.9rem;
+                }
+
+            .code-block {
+                font-size: 0.8rem;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Home Icon -->
+        <a class="home-icon" aria-label="Go back to home" href="javascript:history.back()">
+            &#8962; <!-- Home Symbol -->
+        </a>
+        <h1>Project Showcase</h1>
+        <p>Highlighting a Full-Stack Software Engineering Solution</p>
+    </header>
+
+    <section class="project">
+        <h2>Project Title: Database Management System</h2>
+        <div class="project-image">
+            <img src="project-image.jpg" alt="Project Screenshot">
+        </div>
+        <p>This project involves the design and implementation of a robust database management system tailored for semiconductor parts and purchasing operations. The system integrates automation, analytics, and reporting features to streamline business processes.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+            <li>Automated data processing with SQL and VBA</li>
+            <li>Interactive dashboards providing real-time business insights</li>
+            <li>Scalable architecture for handling over 6,500 parts</li>
+            <li>Enhanced reporting capabilities with detailed visualizations</li>
+        </ul>
+
+        <h3>Technical Implementation</h3>
+        <p>The system was developed using a combination of Microsoft Access, SQL, and VBA to automate tasks, reduce manual intervention, and ensure data accuracy. The following code snippet demonstrates a part of the automation logic:</p>
+
+        <div class="code-block">
+            <code>
+                ' VBA Script for Automating Data Entry
+                Sub AutomateDataEntry()
+                Dim db As Database
+                Set db = CurrentDb()
+                db.Execute "UPDATE Parts SET Status = 'Reviewed' WHERE Status = 'Pending'"
+                MsgBox "Data Entry Automated Successfully!"
+                End Sub
+            </code>
+        </div>
+
+        <h3>Results</h3>
+        <p>This solution led to significant improvements, including:</p>
+        <ul>
+            <li>50% reduction in manual tasks</li>
+            <li>Improved accuracy in order processing</li>
+            <li>Enhanced visibility into business performance metrics</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -41,13 +41,15 @@
             <div class="about-content">
                 <p>
                     I am a full stack developer with 2 years of experience in both application and presentation layers.
-                    I have worked extensively with python performing exploratory data analysis and ETL.
-                    I fully designed and manage a database for internal storage of customer and material information.
-                    I have worked on applications and microservices deployed on IBM Cloud.
+                    I have worked extensively with python creating ML models, performing exploratory data analysis and automating ETL.
+                    I have worked on applications and microservices deployed on AWS and IBM Cloud.
                     <br /><br />
-                    After graduating from the school of engineering at Texas A&M University I joined Applied Industrial Technologies. There I began servicing our largest account, a large semiconductor OEM and began driving sales and improving operational efficiency. I automated critical processes using SQL and VBA, enhancing data management for over 6,000 components. I also built a comprehensive dashboard to provide real-time insights, supporting data-driven decisions and optimizing operation.
+                    After graduating from the school of engineering at Texas A&M University I joined Applied Industrial Technologies.
+                    There I began servicing our largest account, a large semiconductor OEM and began driving sales and improving operational efficiency.
+                    I designed and developed an entire system from database architecture and automation to UI design and performance optimization integrating SQL, VBA, and data visualizations to create a seamless, efficient solution.
                 </p>
             </div>
+        </div>
 </section>
 
     <!-- Skills Section -->
@@ -150,7 +152,7 @@
         <div class="accordion">
             <div class="accordion-item">
                 <h3 class="accordion-title">Database Architect - Applied Industrial Technologies</h3>
-                <div class="accordion-content" >
+                <div class="accordion-content">
                     <p style="text-align:left">
                         <b>Database Management:</b> Designed and implemented a comprehensive database in Microsoft Access to manage and streamline the data for over 6,500 parts, including purchasing, vendor, and quoting information. Ensured data integrity and optimized performance through careful schema design and indexing strategies.
                         <br><br>
@@ -158,33 +160,104 @@
                         <br><br>
                         <b>Data Analysis & Visualization:</b> Built and maintained a dynamic dashboard to track key business metrics, providing real-time insights into performance and trends. Leveraged data visualization tools to create insightful reports and presentations, supporting strategic decision-making.
                         <br><br>
-                        <b>Process Improvement:</b> Continuously evaluated and refined database architecture and processes to accommodate growing data needs and improve system scalability and reliability
-                    </pstyle="text-align:left">
+                        <b>Process Improvement:</b> Continuously evaluated and refined database architecture and processes to accommodate growing data needs and improve system scalability and reliability.
+                    </p>
                     <div style="align-items: center;">
                         <img src="Project/Database_menu.png" style="margin:10px" />
                         <img src="Project/Database_part.png" style="margin:10px" />
                     </div>
+                    <div class="navbar-item">
+                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/AccessProject.html">See Project </a>
+                    </div>
                 </div>
             </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-title">Website design and deployment</h3>
+                <div class="accordion-content">
+                    <div style="align-items: center;">
+                        <h4>Car Dealership Review Application</h4>
+                        <p>
+                            Constructed a complete web application for a national car dealership that allows new and existing customers to look up different branches by state and look at customer reviews of the various branches.
+                        </p>
+                        <div style="text-align:left">
+                            <br>
+                            <h3>Django-Based Web Application:</h3>
+
+                            Developed a responsive website to showcase car dealerships and user reviews using Django as the backend.
+                            <br>Designed and implemented dynamic pages, including dealer listings, reviews, and a form to submit user reviews.
+                            <br>
+                            <h3>Microservices Integration:</h3>
+
+                            Integrated a Node.js Express microservice to manage dealers and reviews stored in MongoDB.
+                            <br>Leveraged Django proxy services for seamless communication between the website and backend microservices.
+                            <br>
+                            <h3>Sentiment Analysis:</h3>
+
+                            Deployed a custom Sentiment Analyzer microservice on IBM Cloud Code Engine.
+                            <br>Implemented sentiment scoring to analyze user-submitted reviews (positive, negative, or neutral).
+
+                            <h3>Authentication and User Management:</h3>
+
+                            Integrated Django's authentication system for secure user management.
+                            <br>Built a React-based front-end for an improved user experience.
+                            <br>
+                            <h3>Advanced Features:</h3>
+
+                            Dockerized backend services to enhance deployment and scalability.
+                            <br>Deployed the application on Kubernetes with continuous integration (CI/CD) pipelines for testing and linting.
+                            <br>
+                            <h3>Data Management:</h3>
+
+                            Used SQLite for storing car models and makes within Django.
+                            <br>Enabled real-time tracking of dealership and review data through custom APIs
+                        </div>
+                        <img src="Project/capstone-dealership-architecture.png" style="margin:10px" />
+                    </div>
+                    <div class="navbar-item">
+                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://application-af.1nwwngrynv7v.us-south.codeengine.appdomain.cloud">See Project </a>
+                    </div>
+
+                    <h4>Paradise Nursery Shopping Application</h4>
+                    <p style="text-align:left">
+                        <br><b>React Components:</b> Uses functional React components using component composition and nesting.
+                        <br>
+                        <br><b>State Management with Hooks:</b> Implemented React Hooks, specifically the useState and useEffect hooks.
+                        <br>Managed component-level state using hooks to control the visibility of elements.
+                        <br>
+                        <br><b>Redux Integration:</b> Integrate Redux within an application using Redux concepts like actions, reducers, and the store.
+                        <br>
+                        <br><b>Rendering Dynamic Data:</b> Dynamically renders data fetched from an array of objects into the UI.
+                        <br>Mapped over arrays to generate lists of components.
+                        <br>
+                        <br><b>Handles Events and Conditional Rendering:</b> Handles user events such as button selection and trigger corresponding actions.
+                    </p>
+                    <img src="Project/e-plant.png" style="margin:10px" />
+                    <div class="navbar-item">
+                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://camerondietz.github.io/e-plantShopping/">See Project </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="accordion-item">
                 <h3 class="accordion-title">Data Analytics</h3>
                 <div class="accordion-content">
                     <p style="text-align:left">
                         This project focused on analyzing an HR dataset to uncover insights into employee retention and build predictive models for identifying key turnover factors. Initial data exploration included loading a 14,999-row dataset, renaming columns for clarity, and removing 3,008 duplicate rows. Missing values were checked, and data types were reviewed to ensure proper preprocessing.
                         <br> <br>
-                             <b>Key Analysis Steps and Visualizations:</b><br>
+                        <b>Key Analysis Steps and Visualizations:</b><br>
                         1. Outlier Detection: Using boxplots and IQR, 824 outliers in tenure were flagged (outside 1.5-5.5 years).<br>
                         2. Retention Analysis: Analysis of the left column revealed 16.6% of employees had left. Visualizations like boxplots, histograms, and scatter plots highlighted trends in project counts, average monthly hours, and satisfaction levels, showing that higher workloads increased turnover.<br>
                         3. Tenure and Salary Insights: Tenure distribution showed lower satisfaction (mean: 0.44) for those who left, compared to retained employees (mean: 0.67). Histograms segmented by tenure and salary indicated higher turnover among short-tenured, low-salary employees.<br>
                         4. Department Retention Trends: Counts of stayed/left employees across departments revealed varied retention rates, emphasizing the need for department-specific strategies.<br>
                         <br> <br>
-                             <b>Data Preparation for Modeling:</b><br>
+                        <b>Data Preparation for Modeling:</b><br>
                         • Salary was encoded ordinally, and departments were dummy-encoded for model compatibility.<br>
                         • A correlation heatmap identified significant predictors like satisfaction level and average monthly hours.<br>
                         • Outliers were removed for a clean dataset used in logistic regression modeling.<br>
                         • The dataset is split into training (X_train, y_train) and testing (X_test, y_test) sets using train_test_split() with a 25% test size, stratified on y to maintain the target distribution, and a random_state for reproducibility.<br>
                         <br> <br>
-                             <b>Predictive Modeling Highlights:</b><br>
+                        <b>Predictive Modeling Highlights:</b><br>
                         <b>1. Logistic Regression:</b><br>
                         ○ A logistic regression model log_clf is instantiated with random_state=42 and max_iter=500 and fitted on the training data.<br>
                         ○ Precision, recall, f1-score, and support for both classes: employees predicted to stay and to leave.<br>
@@ -197,23 +270,23 @@
                         ○ Reached an AUC of 0.9648, slightly outperforming the decision tree.<br>
                         ○ Feature importance analysis showed satisfaction level, average monthly hours, and tenure as top predictors.<br>
                         <br> <br>
-                             <b>Interpretability and Insights:</b><br>
+                        <b>Interpretability and Insights:</b><br>
                         • Visual plots of feature importances from both models identified key factors driving employee retention.<br>
                         • Important features were plotted based on Gini importance, with results suggesting that factors like satisfaction level, average monthly hours, and tenure play significant roles in determining employee turnover.<br>
                         <br> <br>
                         Overall, this analysis utilized the effective use of data exploration, visualization and machine learning techniques to model company data such as employee retention, providing actionable insights for HR strategies aimed at reducing turnover. The results underscore the importance of job satisfaction, workload, and tenure in predicting employee departure, offering a data-driven approach to HR management.<br>
 
-                    </pstyle="text-align:left">
+                    </p>
                     <div class="navbar-item">
                         <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/DataAnalytics.html">See Project </a>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h3 class="accordion-title">Application development - C++ programs</h3>
+                <h3 class="accordion-title">Application development - C++</h3>
                 <div class="accordion-content">
                     <p style="text-align:left">
-                        Using C++ created a program to map the most efficient route through land using topographical map data.
+                        This program was created using C++ to map the most efficient route through land using topographical map data.
                         This code reads elevation data from a file, processes it into a grayscale image in PPM format, and highlights the optimal path across the map using color. Here’s a section-by-section summary:
                         <br> <br>
                         <b>Input Handling:</b> The program asks for the number of rows, columns, and the input file name containing elevation data. The file is validated, and if accessible, it's opened for reading.
@@ -232,14 +305,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h3 class="accordion-title">Website design and deployment</h3>
-                <div class="accordion-content">
-                    <p>
-                        Ecommerce Website in development.
-                    </p>
-                </div>
-            </div>
+
         </div>
     </section>
 

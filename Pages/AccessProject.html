@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Fixed top navbar example · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+        ul {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
+        /* Project Section */
+        .project {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+            .project h2 {
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #333;
+                padding-bottom: 0.5rem;
+            }
+
+            .project p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 1rem;
+                line-height: 1.8;
+            }
+
+            .project ul {
+                list-style-type: disc;
+                margin: 1rem 0 1rem 2rem;
+                color: #333;
+            }
+
+                .project ul li {
+                    margin-bottom: 0.5rem;
+                }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-text {
+            flex: 1;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Code Section */
+        .code-block {
+            background: #f4f4f4;
+            border-left: 4px solid #333;
+            padding: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+            .code-block code {
+                display: block;
+                color: #333;
+                font-size: 0.7rem;
+                white-space: pre
+            }
+
+        @media (max-width: 768px) {
+            .project {
+                padding: 1.5rem;
+            }
+
+                .project h2 {
+                    font-size: 1.5rem;
+                }
+
+                .project p {
+                    font-size: 0.9rem;
+                }
+
+            .code-block {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed.css" rel="stylesheet">
+  </head>
+  <body>
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+              <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+              <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+          </symbol>
+      </svg>
+
+      <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  aria-label="Toggle theme (auto)">
+              <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+              <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+              <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                      Light
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                  </button>
+              </li>
+              <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                      Dark
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                  </button>
+              </li>
+              <li>
+                  <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                      Auto
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                  </button>
+              </li>
+          </ul>
+      </div>
+
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="javascript:history.back()">Home</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="text-center w-100">
+                  <a class="navbar-brand" href="#" style="font-size:1.6rem">Database Management System</a>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Start of body -->
+
+      <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis">Overview</h1>
+          <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                  This project involves the design and implementation of a robust database management system tailored for business operations with a large semiconductor OEM. The system integrates automation, analytics, and reporting features to streamline business processes.
+                  <br><br>
+                  I am the sole developer and designer of this project. I was responsible for the full lifecycle of development from defining user requirements and designing database architecture to constructing the automation, UI design, and API integrations. I also managed the data migration, application deployments, conducted testing and ensured performance optimization using DevOps methodology.
+                  <br><br>
+                  <strong>Note:</strong> Information in this document may have been altered or fictionalized to protect sensitive and confidential information.
+              </p>
+          </div>
+      </div>
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="media/dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Analytics</h1>
+                  <ul>
+                      <li>This application utilizes automated scripts combined with SQL to calculate and record a wide variety of metrics with no added work required. </li>
+                      <li>The addition of this feature has added the ability to show the current state of how we are performing and compare it over time.</li>
+                      <li>This has helped to identify the effect of changes in processes and re-strategize our business operations to improve efficiency.</li>
+                      <li>Added the ability to track and compare customer demand allowing us to be proactive against changes in business volume and scale up or down resources accordingly, a common trend in the semiconductor industry.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis">Issue Tracking</h1>
+          <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                  Added ability to quickly mark parts into issue categories to define issues and standardize the process to handling them.
+                  This in turn reduced the need to ask so many questions and leave things up to speculation on what to do with them, reducing time wasted and possibility of commits being missed because they were assumed to be handled by someone else.
+                  Created custom views for management to be able to see all parts with active issues so that they can quickly be addressed without needing to rely on employees to bring awareness to the issue.
+              </p>
+
+          </div>
+      </div>
+
+
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis">Quote Management</h1>
+          <div class="col-lg-6 mx-auto">
+              <ul style="text-align:left">
+                  <li>Designed a system to manage the quoting process across multiple branches, consolidating disparate data sources.</li>
+                  <li>Reduced time required for data entry by creating tools to upload and manage quote documents efficiently.</li>
+                  <li>Developed functionality to automatically generate RFQ emails with part and vendor information, increasing quoting speed.</li>
+                  <li>Added the capability for our system to connect to vendor's API services using Oauth 2.0 and json parsing to automatically pull part and pricing information. We used this to validate all part information such as LT to ensure that production planning has accurate information. </li>
+              </ul>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh;">
+              <div class="container">
+                  <img src="media/quote.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="1000" height="500" loading="lazy">
+              </div>
+          </div>
+      </div>
+
+      <section class="project">
+          <p>
+              Sample of code used to automatically pull information and create email object.
+          </p>
+          <div class="code-block">
+              <code>
+                  ‘ Ensure a vendor is listed
+                  If (IsNull(Combo.Value)) Then
+                  MsgBox "Enter Vendor ID"
+                  Else
+
+                  Dim objOutlook As Object
+                  Dim objMail As Object
+                  Dim MyTime As String
+                  Dim PartNumber As String
+                  Dim signature As String
+                  Dim dtToday As String
+                  dtToday = Date
+                  dtToday = Replace(dtToday, "/", "-")
+
+                  Set objOutlook = CreateObject("Outlook.Application")
+                  Set objMail = objOutlook.CreateItem(0)
+
+                  With objMail
+                  .Display
+                  End With
+
+
+                  Dim db As DAO.Database
+                  Dim rs As DAO.Recordset
+                  Dim vendorName As String
+                  Dim quoteEmail As String
+
+                  Set db = CurrentDb()
+                  Set rs = db.OpenRecordset("SELECT * FROM VendorsT WHERE VendorsT.ID = " & VendorID)
+                  If Not rs.EOF Then
+                  vendorName = rs!VendorName
+
+                  ‘ Ensure information
+                  If rs!Quote <> "" Then
+                  quoteEmail = rs!Quote
+                  ElseIf rs!Contact <> "" Then
+                  quoteEmail = rs!Contact
+                  End If
+                  Else
+                  MsgBox "No record found for VendorID " & VendorID
+                  End If
+
+                  rs.Close
+                  Set rs = Nothing
+                  Set db = Nothing
+
+                  signature = objMail.HTMLbody
+
+                  ‘ Set the greeting
+                  Select Case Time
+                  Case Is < TimeValue("12:00")
+                  MyTime = "Good morning, "
+                  'Set rngBody = .Range("B3")
+                  Case Is < TimeValue("16:00")
+                  MyTime = "Good afternoon, "
+                  'Set rngBody = .Range("B3")
+                  Case Else
+                  MyTime = "Good evening, "
+                  'Set rngBody = .Range("B3")
+                  End Select
+
+                  ‘ Select the appropriate email
+                  With objMail
+                  If Not (IsNull(quoteEmail)) Then
+                  .To = quoteEmail
+                  ElseIf Not (IsNull(ContactEmail)) Then
+                  .To = ContactEmail
+                  Else
+                  .To = ""
+                  End If
+
+                  ‘ Select the appropriate part numbers
+                  PartNumber = ""
+                  If Not (IsNull(VendorPNBox)) Then
+                  PartNumber = VendorPNBox
+                  If Not (IsNull(MFRPNBox)) Then
+                  PartNumber = PartNumber & " / " & MFRPNBox
+                  End If
+                  ElseIf Not (IsNull(MFRPN)) Then
+                  PartNumber = MFRPNBox
+                  End If
+
+                  Dim AMATNum As String
+                  AMATNum = AMATPNBox
+
+                  .cc = "example@applied.com"
+                  .Subject = vendorName + " New RFQ " + dtToday + " " + AMATNum
+                  .HTMLbody = "BODY style=font-size:11pt;" + MyTime + "Can you please quote the following with your MOQ and all available price breaks? (Please include all of the requested information for this first time quote, needed for part qualification)Part: " + PartNumber + "Desc: " + DescriptionBox + "Price: ?MOQ:?COO:?Standard MFR LT:?HTS:?ECCN:?RoHS/REACH Compliant: Yes or No" + vbNewLine + signature
+              </code>
+          </div>
+      </section>
+
+      <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="media/login.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Authentication and Security</h1>
+                  <ul>
+                      <li>Implemented secure data storage accessible only to authorized personnel.</li>
+                      <li>Encrypted data at rest and added password protection for all applications.</li>
+                      <li>Created logs for activity tracking and ensured applications were executable-only to prevent unauthorized code changes.</li>
+                      <li>Established user-level privileges to prevent accidental or unauthorized operations.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold text-body-emphasis">Shipping</h1>
+          <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                  Integrated our stock report from SAP with customer information to create views that include information merged from multiple systems. This enables us to quickly generate reports based on customer inquiries for part availability or forcasting.
+                  The system now automatically generates shipping reports that are sent to our shipping team showing never before linked views of our stock and orders that are ready to ship or those which are in demand by our customer but require action on our end.
+              </p>
+
+          </div>
+      </div>
+
+      <section class="project">
+          <p>
+              Sample of code used to extract some of the information from files to migrate them to the new system.
+          </p>
+          <div class="code-block">
+              <code>
+                  Sub ImportCellValueToTable()
+                  Dim objExcel As Object
+                  Dim objWorkbook As Object
+                  Dim objWorksheet As Object
+                  Dim strFolderPath As String
+                  Dim strFileName As String
+                  Dim db As DAO.Database
+                  Dim rs As DAO.Recordset
+                  Dim filePath As String
+
+                  ' Initialize target cells
+                  Dim TargetMFR As String
+                  Dim TargetNAME As String
+                  ...
+
+                  ' Initialize cell value variables
+                  Dim cellValueMFR As Variant
+                  Dim cellValueNAME As Variant
+                  ...
+
+                  ' Folder path containing Excel files
+                  strFolderPath = "\\file.global\secure\data\branch\PDFs\Vendor Covers\"
+
+                  ' Specify the target cell to extract (e.g., "A1")
+                  TargetMFR = "A22"
+                  TargetNAME = "b22"
+                  ...
+
+                  ' Set up the database and recordset
+                  Set db = CurrentDb
+                  Set rs = db.OpenRecordset("inputtempt", dbOpenDynaset)
+
+                  ' Loop through each Excel file in the folder
+                  strFileName = Dir(strFolderPath & "*.xlsx")
+                  Do While strFileName <> ""
+                  filePath = strFolderPath & strFileName
+
+                  ' Open the Excel file
+                  Set objExcel = CreateObject("Excel.Application")
+                  Set objWorkbook = objExcel.Workbooks.Open(filePath)
+
+                  ' Set the worksheet to the first sheet (adjust if needed)
+                  Set objWorksheet = objWorkbook.Worksheets(1)
+
+                  ' Extract the value from the specified cell
+                  cellValueMFR = objWorksheet.Range(TargetMFR).Value
+                  cellValueNAME = objWorksheet.Range(TargetNAME).Value
+                  ...
+
+
+                  ' Add the extracted value and filename to the table
+                  With rs
+                  .AddNew
+                  !FileName = strFileName
+                  !MFR = cellValueMFR
+                  ...
+                  .Update
+                  End With
+
+                  ' Close the workbook and clean up
+                  objWorkbook.Close False
+                  Set objWorksheet = Nothing
+                  Set objWorkbook = Nothing
+                  Set objExcel = Nothing
+
+                  ' Get the next file
+                  strFileName = Dir
+                  Loop
+
+                  ' Clean up
+                  rs.Close
+                  Set rs = Nothing
+                  Set db = Nothing
+
+                  MsgBox "Data extraction complete!"
+                  End Sub
+              </code>
+          </div>
+      </section>
+
+  </body>
+</html>

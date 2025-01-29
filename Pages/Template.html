@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+        /* Section Styling */
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #007bff;
+            }
+
+            section p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                color: #555;
+            }
+
+        /* Portfolio Cards */
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: #fdfdfd;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            .card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+                color: #666;
+            }
+
+        /* Responsive Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #f1f1f1;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+            footer a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body style="margin:0;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="javascript:history.back()"<b>Home</b></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my world of creativity and technology</p>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Project Image">
+            <div class="card-content">
+                <h2>Project Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel urna at nisl tempus laoreet.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Project Image">
+            <div class="card-content">
+                <h2>Project Title 2</h2>
+                <p>Praesent ac arcu in eros vestibulum tempor. Integer vel elit nec leo placerat pellentesque.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Project Image">
+            <div class="card-content">
+                <h2>Project Title 3</h2>
+                <p>Suspendisse potenti. Maecenas a ligula vel augue efficitur aliquam sed id est.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Project Image">
+            <div class="card-content">
+                <h2>Project Title 4</h2>
+                <p>Vivamus commodo, nisl ut congue tempor, quam nisl hendrerit magna, ut tincidunt nulla lacus ut metus.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Project Image">
+            <div class="card-content">
+                <h2>Project Title 5</h2>
+                <p>Fusce vehicula tortor nec velit finibus, vel vehicula nulla tristique. Aenean non velit nec mi congue placerat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>

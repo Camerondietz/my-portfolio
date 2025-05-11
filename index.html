@@ -151,8 +151,83 @@
     <section id="projects">
         <h2>My Projects</h2>
         <div class="accordion">
+
             <div class="accordion-item">
-                <h3 class="accordion-title">Database Architect - Applied Industrial Technologies</h3>
+                <h3 class="accordion-title">Ecommerce Platform</h3>
+                <div class="accordion-content">
+                    <div style="text-align:left">
+                        <br />
+                        <h3>Industrial E-Commerce Platform:</h3>
+                    
+                        Designed and built a full-stack platform for selling industrial parts with a focus on reliability, performance, and ease of use.
+                        <br />Utilized Django and PostgreSQL for robust backend logic, secure APIs, and transactional integrity.
+                        <br />Integrated a MongoDB-powered Node.js microservice to handle fast, unstructured product search and filtering.
+                    </div>
+                    <div style="align-items: center;">
+                      <img src="Project/ecommerce_products.png" style="margin:10px" />
+                    </div>
+                    <div style="text-align:left">
+                        <h3>Modern Frontend Stack:</h3>
+                    
+                        Built the frontend using Next.js 15 with TypeScript and Tailwind CSS.
+                        <br />Implemented Redux for global state management across shopping cart, filters, and user sessions.
+                        <br />Developed responsive, mobile-friendly layouts for accessibility in industrial field settings.
+                    
+                        <h3>AI-Powered Support:</h3>
+                    
+                        Connected OpenAI API via Django to assist users with intelligent troubleshooting.
+                        <br />Enabled context-aware, domain-specific support for product compatibility, diagnostics, and selection.
+                    </div>
+                    <div style="align-items: center;">
+                      <img src="Project/ecommerce_AI-tool.png" style="margin:10px" />
+                    </div>
+                    <div style="text-align:left">
+                        <h3>Secure Checkout and Payments:</h3>
+                    
+                        Implemented Stripe for secure payment processing and integrated it directly into the Django backend.
+                        <br />All transactions and orders are securely stored and associated with user accounts.
+                        
+                        <h3>Deployment in Industrial Environments:</h3>
+                    
+                        Deployed the platform on a Raspberry Pi using Docker containers for resource-efficient local hosting.
+                        <br />Used Cloudflare Tunnel to expose services with DDoS protection and automatic SSL encryption.
+                        
+                        <!--<h3>Infrastructure & Observability:</h3>
+                    
+                        Exposed health check endpoints and added centralized logging across all services.-->
+                        <br />Ensured smooth monitoring, debugging, and uptime even in limited hardware environments.
+                    
+                        <h3>Tech Stack Highlights:</h3>
+                    
+                        <ul>
+                            <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS, Redux</li>
+                            <li><strong>Backend:</strong> Django REST Framework, PostgreSQL</li>
+                            <li><strong>Search Service:</strong> Node.js + Express with MongoDB</li>
+                            <li><strong>AI:</strong> OpenAI API integration for customer support</li>
+                            <li><strong>Payments:</strong> Stripe integration for secure checkout</li>
+                            <li><strong>Deployment:</strong> Docker, Cloudflare Tunnel, Kubernetes, Raspberry Pi</li>
+                        </ul>
+                    
+                        <h3>Why It Matters:</h3>
+                    
+                        Industrial companies often lack modern digital tools for part ordering and support.
+                        <br />This platform bridges that gap with:
+                        <ul>
+                            <li>Real-time filtering of thousands of SKUs</li>
+                            <li>AI-driven support for non-technical users</li>
+                            <li>Low-cost, secure deployment in offline or constrained environments</li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-item" style="justify-content: center;">
+                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://ecommerce.cameron-dietz.com">See Website </a>
+                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://github.com/Camerondietz/web-application">See Code </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-title">Database and CRM - Applied Industrial Technologies</h3>
                 <div class="accordion-content">
                     <p style="text-align:left">
                         <b>Database Management:</b> Designed and implemented a comprehensive database in Microsoft Access to manage and streamline the data for over 6,500 parts, including purchasing, vendor, and quoting information. Ensured data integrity and optimized performance through careful schema design and indexing strategies.
@@ -295,7 +370,7 @@
                         <br> <br>
                         <b>Data Processing:</b> Elevation values are read, stored in a 2D vector dat, and then min/max values are calculated to scale elevation to grayscale.
                         <br> <br>
-                        <b>Grayscale Mapping:</b> Each elevation value is mapped to a grayscale intensity (0–255) and stored in RGB vectors r, g, and b.
+                        <b>Grayscale Mapping:</b> Each elevation value is mapped to a grayscale intensity (0-255) and stored in RGB vectors r, g, and b.
                         <br> <br>
                         <b>Path Coloring:</b> Using the colorPath function, the program determines the least elevation-change path across the map. Paths are highlighted with specified RGB colors for visualization, and the shortest path is colored separately in bright green.
                         <br> <br>
@@ -315,10 +390,10 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contact-container">
-	    <a href="Cameron Dietz.vcf" class="contact-icon"><i class="fa fa-address-card"></i></a>
-            <a href="https://www.linkedin.com/in/dietzcameron" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Camerondietz" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
-            <a href="mailto:dietz.cameron@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+	        <a href="Cameron Dietz.vcf" class="contact-icon" title="Contact Card"><i class="fa fa-address-card"></i></a>
+            <a href="https://www.linkedin.com/in/dietzcameron" title="Linkedin" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Camerondietz" title="Github" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>    
+            <a href="mailto:dietz.cameron@gmail.com" title="Email" class="contact-icon"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 

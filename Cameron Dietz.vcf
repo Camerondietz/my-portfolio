@@ -5,7 +5,9 @@ N:Dietz;Cameron;;;
 FN:Cameron Dietz
 ORG:Software Engineer;
 EMAIL;type=INTERNET;type=pref:dietz.cameron@gmail.com
-TEL;type=CELL;type=VOICE;type=pref:(512) 750-7411
+TEL;type=CELL;type=VOICE;type=pref:(512) 750-7411
+
+X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/dietzcameron
 item1.URL;type=pref:cameron-dietz.com
 item1.X-ABLabel:_$!<HomePage>!$_
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAA

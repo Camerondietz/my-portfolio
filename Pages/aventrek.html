@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project Showcase">
+    <meta name="author" content="Cameron Dietz">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Creation of Aventrek</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        ul {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+            .bd-mode-toggle .dropdown-menu .active .bi {
+                display: block !important;
+            }
+
+        /* Project Section */
+        .project {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+            .project h2 {
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #333;
+                padding-bottom: 0.5rem;
+            }
+
+            .project p {
+                font-size: 1rem;
+                color: #666;
+                margin-bottom: 1rem;
+                line-height: 1.8;
+            }
+
+            .project ul {
+                list-style-type: disc;
+                margin: 1rem 0 1rem 2rem;
+                color: #333;
+            }
+
+                .project ul li {
+                    margin-bottom: 0.5rem;
+                }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-text {
+            flex: 1;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Code Section */
+        .code-block {
+            background: #f4f4f4;
+            border-left: 4px solid #333;
+            padding: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+            .code-block code {
+                display: block;
+                color: #333;
+                font-size: 0.7rem;
+                white-space: pre
+            }
+			
+		/*A Very Special Button*/
+		.btn-glow {
+		  position: relative;
+		  display: inline-block;
+		  overflow: hidden;
+		  padding: 0.75rem 1.5rem;
+		  color: #fff;
+		  background: linear-gradient(135deg, #0dcaf0, #6610f2);
+		  border: none;
+		  border-radius: 50px;
+		  font-weight: 600;
+		  transition: box-shadow 0.3s ease, transform 0.2s ease;
+		  text-transform: uppercase;
+		  letter-spacing: 0.05em;
+		}
+
+		.btn-glow:hover {
+		  box-shadow: 0 0 15px #0dcaf0, 0 0 30px #6610f2;
+		  transform: scale(1.05);
+		  text-decoration: none;
+		}
+
+		.btn-glow .ripple {
+		  position: absolute;
+		  width: 20px;
+		  height: 20px;
+		  background: rgba(255, 255, 255, 0.4);
+		  display: block;
+		  content: "";
+		  border-radius: 9999px;
+		  animation: ripple 0.6s linear;
+		  pointer-events: none;
+		}
+
+		.btn-glow:active .ripple {
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, -50%);
+		}
+
+		@keyframes ripple {
+		  from {
+			transform: scale(0);
+			opacity: 1;
+		  }
+		  to {
+			transform: scale(5);
+			opacity: 0;
+		  }
+		}
+
+        @media (max-width: 768px) {
+            .project {
+                padding: 1.5rem;
+            }
+
+                .project h2 {
+                    font-size: 1.5rem;
+                }
+
+                .project p {
+                    font-size: 0.9rem;
+                }
+
+            .code-block {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="javascript:history.back()">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center w-100">
+                <a class="navbar-brand" href="#" style="font-size:1.6rem">Industrial E-Commerce Platform</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start of body -->
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Aventrek: Technical Deep Dive</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-6">
+                This is an overview of the development of a full-stack e-commerce platform designed for industrial parts distribution, emphasizing scalability, security, and performance in constrained environments. As the sole developer, I managed the entire development lifecycle: requirements gathering, system architecture, API integrations, DevOps, security testing, and operational documentation. The platform integrates advanced search, AI-driven support, ERP automation, and robust networking to deliver a seamless experience for industrial clients.
+                <br><br>
+                <!--<strong>Note:</strong> Details have been generalized to protect sensitive information.-->
+            </p>
+        </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg align-items-center justify-content-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Frontend Architecture</h1>
+                <ul>
+                    <li>Developed with <strong>Next.js 15</strong> (App Router) and <strong>TypeScript</strong> for type-safe, scalable UI development.</li>
+                    <li>Utilized <strong>Tailwind CSS</strong> for responsive, mobile-first layouts optimized for industrial field use (e.g., tablets in warehouses).</li>
+                    <li>Implemented <strong>Redux Toolkit</strong> for global state management, handling complex cart interactions, filter states, and user sessions.</li>
+                    <li>Enhanced SEO with server-side rendering (SSR), dynamic meta/open graph tags, and structured data for better indexing by search engines.</li>
+                    <li>Optimized performance with lazy-loaded components, image optimization, and Next.js static generation for key pages.</li>
+                </ul>
+            </div>
+			<div class="col-10 col-sm-8 items-center col-lg-6">
+                <img src="media/ecommerce_products.png" class="d-block mx-lg-auto img-fluid" alt="Frontend Interface" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Backend and Database</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                The backend leverages <strong>Django REST Framework</strong> with <strong>PostgreSQL</strong> for transactional integrity and structured data storage. A polyglot persistence model integrates a <strong>Node.js + Express</strong> microservice with <strong>MongoDB</strong> for high-speed, unstructured part searches.
+                <br><br>
+                Key implementations include:
+                <ul style="text-align:left">
+                    <li>Custom API endpoints for real-time vendor data fetching (e.g., DigiKey, Mouser) using OAuth 2.0 and JSON parsing for live pricing and lead times.</li>
+                    <li>Database indexing on frequently queried fields (e.g., part numbers, categories) to optimize search and filter performance.</li>
+                    <li>Integration with <strong>Amazon SES</strong> for automated transactional emails (order confirmations, status updates).</li>
+                    <li>Secure payment processing via <strong>Stripe</strong>, with server-side checkout session management and frontend Stripe Elements integration to ensure PCI compliance.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">ERP Integration</h1>
+                <ul>
+                    <li>Deployed <strong>ERPNext</strong> in a Docker container, integrated with the Django backend to automate customer onboarding and order processing.</li>
+                    <li>Developed REST API endpoints to sync orders, customer data, and statuses between the e-commerce platform and ERPNext.</li>
+                    <li>Enabled real-time order status updates on the frontend’s orders page, improving customer transparency.</li>
+					<li>Resilient design employing the Requests library to initiate retries if subsequent API calls fail</li>
+					<li>Configured with a zero-trust architecture utilizing role based permissions with provided API keys</li>
+                    <!--<li>Configured workflows for inventory management and automated vendor purchase orders based on stock levels.</li>-->
+                </ul>
+            </div>
+			<div class="col-10 col-sm-8 col-lg-6">
+                <img src="media/erpnext.png" class="d-block mx-lg-auto img-fluid" alt="ERPNext Dashboard" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Deployment and DevOps</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                
+                <ul style="text-align:left">
+                    <li>Deployed services using <strong>Docker Compose</strong> on a Raspberry Pi 5 for resource-efficient hosting.</li>
+                    <li>Utilized <strong>Cloudflare Tunnel</strong> for secure external access with automatic SSL and DDoS protection.</li>
+                    <li>Orchestrated containers with a lightweight <strong>Kubernetes</strong> setup for scalability and failover.</li>
+					<li>Created SOPs for incident response, system upgrades, and backup procedures, with <strong>cronjobs</strong> for automated database and file backups.</li>
+                    <!--<li>Implemented monitoring with Prometheus and Grafana for real-time performance tracking and alerting.</li>
+                    <li>Automated CI/CD pipelines via GitHub Actions for testing, building, and deploying updates.</li>-->
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg align-items-center justify-content-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Network and Security</h1>
+                <p class="lead mb-4">
+                The platform is secured with a robust network and application security stack, ensuring reliability in industrial environments.
+                </p>
+                <ul>
+                    <li>Configured a <strong>Protectli</strong> device running an image of <strong>pfSense</strong> with <strong>Suricata</strong> for intrusion detection and prevention.</li>
+                    <li>Implemented VLANs to segregate traffic (e.g., management, guest, application) for enhanced security and performance.</li>
+                    <li>Hardened a <strong>Raspberry Pi 5</strong> running Ubuntu Bookworm, with UFW, Fail2Ban, and restricted to RSA only SSH access.</li>
+                    <li>Conducted penetration testing using <strong>Kali Linux</strong> tools (e.g., Nmap, Burp Suite) to identify and mitigate vulnerabilities.</li>
+                    <li>Currently aligning network and system configurations with <strong>NIST SP 800-171</strong> (CUI) security standards as part of ongoing compliance efforts.</li>
+                </ul>
+            </div>
+			<div class="col-10 col-sm-8 col-lg-6">
+                <img src="media/ids-ips.png" class="d-block mx-lg-auto img-fluid" alt="Deployment Architecture" width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">AI and Vendor Integrations</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                The platform leverages external APIs to enhance functionality and user experience.
+                <ul style="text-align:left">
+                    <li>Implemented <strong>OpenAI API</strong> via Django for product compatibility checks and part selection guidance.</li>
+                    <li>Connected to vendor APIs (e.g., DigiKey) for real-time pricing, availability, and lead time updates.</li>
+                    <li>Integrated <strong>UPS API</strong> for real-time shipping quotes. <!--and tracking, displayed on the orders page.--></li>
+                    <!--<li>Implemented caching with Redis to reduce API call frequency and improve response times.</li>-->
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="px-4 pt-5 my-5 text-center">
+        <h1 class="display-4 fw-bold text-body-emphasis">Performance and Optimization</h1>
+        <div class="col-lg-6 mx-auto">
+            <ul style="text-align:left">
+                <li>Applied database indexing on PostgreSQL to optimize query performance for large SKU datasets.</li>
+				<li>Unified and well-structured taxonomy to ensure consistency across all systems.</li>
+				<li>Added a dynamic sitemap that retrieves and lists static URLs for all parts</li>
+				<li>Migrated hardware to run OS and all storage on a SSD via SATA 2.5 to improve throughput and reliability</li>
+				<li>Leveraged Next.js SSR and incremental static regeneration for SEO and fast page loads.</li>
+                <!--<li>Conducted load testing with Locust to ensure the platform handles high traffic (e.g., 1000 concurrent users).</li>
+                <li>Optimized MongoDB queries with aggregation pipelines for complex part filtering and search.</li>
+                <li>Developed SOPs for system upgrades, ensuring zero-downtime deployments with rolling updates.</li>-->
+            </ul>
+            <!--<div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container">
+                    <img src="media/performance_metrics.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Performance Metrics" width="1000" height="500" loading="lazy">
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Why It Matters</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                This platform addresses critical gaps in industrial e-commerce by providing a secure, scalable, and user-friendly solution for part procurement and support. It empowers non-technical users with AI-driven tools, ensures real-time data accuracy via vendor integrations, and operates reliably in resource-constrained environments. The combination of modern web technologies, robust networking, and ERP automation makes it a versatile solution for industrial clients.
+            </p>
+        </div>
+    </div>
+	<div class="px-4 py-5 my-5 text-center">
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                Too good to be true? see it for yourself...
+            </p>
+			<!-- Button -->
+			<a href="https://aventrek.com" class="btn btn-glow ripple" target="_blank">
+			  Visit Site
+			  
+			</a>
+        </div>
+    </div>
+
+	
+</body>
+</html>

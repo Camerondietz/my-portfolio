@@ -186,6 +186,20 @@ h2 {
     font-size: 1.5rem;
 }
 
+.project-videos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+    .project-videos video {
+    margin: 10px;
+    max-width: 40%;
+    object-fit: cover; /* crop like an image */
+    border-radius: 8px;
+    }
+
 .accordion-content {
     display: none;
     padding: 1rem;
@@ -421,7 +435,10 @@ footer {
         padding: 8px;
         width: 1.5in;
     }
-
-
+    
+    .project-videos video {
+        width: 160px;
+        height: 100px;
+    }
 
 }

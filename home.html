@@ -1,0 +1,113 @@
+<!--
+    Cameron Dietz - Combined Overview
+    Created: 2026-05-23
+    Revision: 1.1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Dietz | Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="home">
+
+    <header class="home-hero">
+        <nav id="siteNav">
+            <ul>
+                <li><a href="#experience">What I Do</a></li>
+                <li><a href="Cameron_Dietz_Resume.pdf">Resume</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-hero-inner">
+            <h1 class="home-name">Cameron Dietz</h1>
+            <div class="home-roles">
+                <span>Engineering Sales</span>
+                <span class="dot"></span>
+                <span>Full Stack Engineer</span>
+            </div>
+            <p class="home-pitch">
+                Texas A&amp;M engineer who sells industrial products to semiconductor manufacturers
+                <em>and</em> ships full-stack software for the same kind of customer.
+                Two careers, one mindset: turn a vague problem into something that works.
+            </p>
+            <div class="hero-cta home-cta">
+                <a href="#experience" class="btn btn-primary">What I do</a>
+                <a href="index.html" class="btn">Developer portfolio &rarr;</a>
+            </div>
+        </div>
+
+        <a href="#experience" class="scroll-cue" aria-label="Scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- Experience cards -->
+    <section id="experience">
+        <h2>What I Do</h2>
+        <div class="experience-grid">
+
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fas fa-handshake"></i></div>
+                <span class="exp-meta">Engineering Sales</span>
+                <h3>Account Manager &mdash; Applied Industrial Technologies</h3>
+                <p>
+                    Several years selling industrial products into Applied Materials, a top global semiconductor OEM.
+                    Owned the account end to end &mdash; technical specification, vendor coordination, quoting, and delivery.
+                </p>
+                <ul>
+                    <li>Managed the company's largest customer relationship by revenue.</li>
+                    <li>Translated complex application requirements into qualified product solutions.</li>
+                    <li>Built tooling that automated quoting, data entry, and reporting for a 6,500+ SKU catalog.</li>
+                    <li>Drove process improvements that compounded into measurable operational efficiency gains.</li>
+                </ul>
+                <a href="https://www.linkedin.com/in/dietzcameron" class="btn" target="_blank">View on LinkedIn</a>
+            </article>
+
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fas fa-code"></i></div>
+                <span class="exp-meta">Software &amp; Data</span>
+                <h3>Full Stack Engineer &amp; Data Analyst</h3>
+                <p>
+                    Full-stack developer with experience across data engineering, ML, web applications, and cloud
+                    deployment. Comfortable working anywhere in the stack &mdash; from Postgres schema design to
+                    React/Next.js UI to Kubernetes deployments.
+                </p>
+                <ul>
+                    <li>Built a Django + Next.js ecommerce platform with AI-assisted support and Stripe checkout.</li>
+                    <li>Shipped Python ML pipelines for EDA, classification, and ETL automation.</li>
+                    <li>Deployed microservices on AWS, IBM Cloud, Kubernetes, and edge hardware (Raspberry Pi + Cloudflare Tunnel).</li>
+                    <li>Designed internal tooling integrating SQL, VBA, and dashboards to streamline business operations.</li>
+                </ul>
+                <a href="index.html" class="btn btn-primary">See developer portfolio &rarr;</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <a href="Cameron Dietz.vcf" class="contact-icon" title="Contact Card"><i class="fa fa-address-card"></i></a>
+            <a href="https://www.linkedin.com/in/dietzcameron" title="LinkedIn" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Camerondietz" title="GitHub" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
+            <a href="mailto:dietz.cameron@gmail.com" title="Email" class="contact-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cameron Dietz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

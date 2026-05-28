@@ -1,423 +1,712 @@
 <!--
-    Cameron Dietz Portfolio
+    Cameron Dietz Portfolio - Developer
     Created: 7/28/2024
-    Last Revision Date: 10/12/2025
-    Revision: 2.5
+    Last Revision Date: 2026-05-23
+    Revision: 3.0
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Dietz's Portfolio</title>
+    <title>Cameron Dietz | Developer Portfolio</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header / Hero -->
     <header>
-        <nav>
+        <nav id="siteNav">
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="Cameron_Dietz_Resume.pdf">Resume</a></li>
-		        <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
         </nav>
         <div class="welcome">
-            <h1>Hi, I'm Cameron Dietz,</h1>
-            <h3>Data Analyst and full stack software Engineer</h3>
+            <span class="eyebrow">Data Analyst &nbsp;•&nbsp; Full Stack Engineer</span>
+            <h1>Hi, I'm <span class="grad">Cameron Dietz</span></h1>
+            <h3>I build data-driven applications end to end.</h3>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">See my work</a>
+                <a href="#contact" class="btn">Get in touch</a>
+            </div>
         </div>
     </header>
 
-    <!-- About Me Section -->
+    <!-- About -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
             <div>
-                <img src="html_finalprojimages/IMG_9345.PNG" alt="My Picture">
+                <img src="html_finalprojimages/IMG_9345.PNG" alt="Cameron Dietz">
             </div>
-            <div class="about-content">
+            <div>
                 <p>
                     I am a full stack developer with years of experience across all layers of the OSI model.
-                    I have worked extensively with python creating ML models, performing exploratory data analysis and automating ETL.
-                    I have worked on applications and microservices deployed on AWS, IBM Cloud and my own local servers.
+                    I have worked extensively with Python creating ML models, performing exploratory data analysis, and automating ETL.
+                    I have built and deployed applications and microservices on AWS, IBM Cloud, and my own local servers.
                     <br /><br />
-                    After graduating from the school of engineering at Texas A&M University I joined Applied Industrial Technologies.
-                    There I began servicing our largest account, a large semiconductor OEM and began driving sales and improving operational efficiency.
-                    I designed and developed an entire application from database architecture and automation to UI design and performance optimization integrating SQL, VBA, scripting and data visualizations to create seamless, efficient solutions across multiple facets of business operations.
+                    After graduating from the school of engineering at Texas A&amp;M University I joined Applied Industrial Technologies,
+                    where I serviced our largest account &mdash; a large semiconductor OEM &mdash; driving sales and improving operational efficiency.
+                    I designed and developed an entire application from database architecture and automation to UI design and performance optimization,
+                    integrating SQL, VBA, scripting, and data visualizations to create seamless solutions across multiple facets of business operations.
                 </p>
             </div>
         </div>
-</section>
+    </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills">
         <h2>My Skills</h2>
-
         <div class="all_skills">
-
-            <div class="skill">
-                <img src="html_finalprojimages/html5.png" />
-                <h6>HTML</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/js.jpeg" />
-                <h6>JavaScript</h6>
-                <p>2 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/java.png" />
-                <h6>Java</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/react.png" />
-                <h6>React</h6>
-                <p>2 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/Python-logo.png" />
-                <h6>Python</h6>
-                <p>4 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/node.png" />
-                <h6>Node.js</h6>
-                <p>2 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/CSS3.png" />
-                <h6>CSS</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/C-logo.png" />
-                <h6>C++</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/Linux.png" />
-                <h6>Linux</h6>
-                <p>2 years experience</p>
-            </div>
-
-            <div class="skill">
-                <img src="html_finalprojimages/VBA.jpg" />
-                <h6>VBA</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/sqlite.jpg" />
-                <h6>SQlite</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/docker.jpg" />
-                <h6>Docker</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/django.png" />
-                <h6>Django</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/postgresql.png" />
-                <h6>PostgresQL</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/kubernetes.png" />
-                <h6>Kubernetes</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skill">
-                <img src="html_finalprojimages/MongoDB.png" />
-                <h6>MongoDB</h6>
-                <p>2 years experience</p>
-            </div>
-
+            <div class="skill"><img src="html_finalprojimages/html5.png" /><h6>HTML</h6><p>3 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/js.jpeg" /><h6>JavaScript</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/java.png" /><h6>Java</h6><p>3 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/react.png" /><h6>React</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/Python-logo.png" /><h6>Python</h6><p>4 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/node.png" /><h6>Node.js</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/CSS3.png" /><h6>CSS</h6><p>3 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/C-logo.png" /><h6>C++</h6><p>3 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/Linux.png" /><h6>Linux</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/VBA.jpg" /><h6>VBA</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/sqlite.jpg" /><h6>SQlite</h6><p>1 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/docker.jpg" /><h6>Docker</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/django.png" /><h6>Django</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/postgresql.png" /><h6>PostgresQL</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/kubernetes.png" /><h6>Kubernetes</h6><p>2 years experience</p></div>
+            <div class="skill"><img src="html_finalprojimages/MongoDB.png" /><h6>MongoDB</h6><p>2 years experience</p></div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="accordion">
+        <div class="projects-grid">
 
-            <div class="accordion-item">
-                <h3 class="accordion-title">Ecommerce Platform - Aventrek</h3>
-                <div class="accordion-content">
-                    <div style="text-align:left">
-                        <br />
-                        <h3>Industrial E-Commerce Platform:</h3>
-                    
-                        Designed and built a full-stack platform for selling industrial parts with a focus on reliability, performance, and ease of use.
-                        <br />Utilized Django and PostgreSQL for robust backend logic, secure APIs, and transactional integrity.
-                        <br />Integrated a MongoDB-powered Node.js microservice to handle fast, unstructured product search and filtering.
-                    </div>
-                    <div style="align-items: center;">
-                      <img src="Project/ecommerce_products.png" style="margin:10px" />
-                    </div>
-                    <div style="text-align:left">
-                        <h3>Modern Frontend Stack:</h3>
-                    
-                        Built the frontend using Next.js 15 with TypeScript and Tailwind CSS.
-                        <br />Implemented Redux for global state management across shopping cart, filters, and user sessions.
-                        <br />Developed responsive, mobile-friendly layouts for accessibility in industrial field settings.
-                    
-                        <h3>AI-Powered Support:</h3>
-                    
-                        Connected OpenAI API via Django to assist users with intelligent troubleshooting.
-                        <br />Enabled context-aware, domain-specific support for product compatibility, diagnostics, and selection.
-                    </div>
-                    <div style="align-items: center;">
-                      <img src="Project/ecommerce_AI-tool.png" style="margin:10px" />
-                    </div>
-                    <div style="text-align:left">
-                        <h3>Secure Checkout and Payments:</h3>
-                    
-                        Implemented Stripe for secure payment processing and integrated it directly into the Django backend.
-                        <br />All transactions and orders are securely stored and associated with user accounts.
-                        
-                        <h3>Deployment in Industrial Environments:</h3>
-                    
-                        Deployed the platform on a Raspberry Pi using Docker containers for resource-efficient local hosting.
-                        <br />Used Cloudflare Tunnel to expose services with DDoS protection and automatic SSL encryption.
-                        
-                        <!--<h3>Infrastructure & Observability:</h3>
-                    
-                        Exposed health check endpoints and added centralized logging across all services.-->
-                        <br />Ensured smooth monitoring, debugging, and uptime even in limited hardware environments.
-                    
-                        <h3>Tech Stack Highlights:</h3>
-                    
-                        <ul>
-                            <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS, Redux</li>
-                            <li><strong>Backend:</strong> Django REST Framework, PostgreSQL</li>
-                            <li><strong>Search Service:</strong> Node.js + Express with MongoDB</li>
-                            <li><strong>AI:</strong> OpenAI API integration for customer support</li>
-                            <li><strong>Payments:</strong> Stripe integration for secure checkout</li>
-                            <li><strong>Deployment:</strong> Docker, Cloudflare Tunnel, Kubernetes, Raspberry Pi</li>
-                        </ul>
-                    
-                        <h3>Why It Matters:</h3>
-                    
-                        Industrial companies often lack modern digital tools for part ordering and support.
-                        <br />This platform bridges that gap with:
-                        <ul>
-                            <li>Real-time filtering of thousands of SKUs</li>
-                            <li>AI-driven support for non-technical users</li>
-                            <li>Low-cost, secure deployment in offline or constrained environments</li>
-                        </ul>
-                    </div>
-
-                    <div class="navbar-item" style="justify-content: center;">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://aventrek.com">See Website </a>
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://github.com/Camerondietz/web-application">See Code </a>
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/aventrek.html">See Details </a>
+            <!-- Aventrek -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Full Stack</span>
+                    <img src="Project/ecommerce_products.png" alt="Aventrek ecommerce platform" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Ecommerce Platform &mdash; Aventrek <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Full-stack industrial parts marketplace with AI support, Stripe checkout, and edge deployment.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>MongoDB</span><span>OpenAI</span><span>Docker</span>
                     </div>
                 </div>
-            </div>
+                <div class="project-detail">
+                    <h3>Industrial E-Commerce Platform</h3>
+                    Designed and built a full-stack platform for selling industrial parts with a focus on reliability, performance, and ease of use.
+                    Utilized Django and PostgreSQL for robust backend logic, secure APIs, and transactional integrity.
+                    Integrated a MongoDB-powered Node.js microservice to handle fast, unstructured product search and filtering.
+                    <img src="Project/ecommerce_products.png" alt="Ecommerce products view" />
 
-            <div class="accordion-item">
-                <h3 class="accordion-title">Database and CRM - Applied Industrial Technologies</h3>
-                <div class="accordion-content">
-                    <p style="text-align:left">
-                        <b>Database Management:</b> Designed and implemented a comprehensive database in Microsoft Access to manage and streamline the data for over 6,500 parts, including purchasing, vendor, and quoting information. Ensured data integrity and optimized performance through careful schema design and indexing strategies.
-                        <br><br>
-                        <b>Automation & Efficiency:</b> Developed and deployed SQL queries and VBA scripts to automate routine tasks, such as data sorting, filtering, and extraction, significantly reducing manual effort and minimizing errors. Automated the generation and distribution of reports, email communications, and file management processes, enhancing operational efficiency.
-                        <br><br>
-                        <b>Data Analysis & Visualization:</b> Built and maintained a dynamic dashboard to track key business metrics, providing real-time insights into performance and trends. Leveraged data visualization tools to create insightful reports and presentations, supporting strategic decision-making.
-                        <br><br>
-                        <b>Process Improvement:</b> Continuously evaluated and refined database architecture and processes to accommodate growing data needs and improve system scalability and reliability.
-                    </p>
-                    <div style="align-items: center;">
-                        <img src="Project/Database_menu.png" style="margin:10px" />
-                        <img src="Project/Database_part.png" style="margin:10px" />
-                    </div>
-                    <div class="navbar-item">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/AccessProject.html">See Project </a>
-                    </div>
-                </div>
-            </div>
+                    <h3>Modern Frontend Stack</h3>
+                    Built the frontend using Next.js 15 with TypeScript and Tailwind CSS. Implemented Redux for global state management across shopping cart, filters, and user sessions. Developed responsive, mobile-friendly layouts for accessibility in industrial field settings.
 
-            <div class="accordion-item">
-                <h3 class="accordion-title">Website design and deployment</h3>
-                <div class="accordion-content">
-                    <div style="align-items: center;">
-                        <h4>Car Dealership Review Application</h4>
-                        <p>
-                            Constructed a complete web application for a national car dealership that allows new and existing customers to look up different branches by state and look at customer reviews of the various branches.
-                        </p>
-                        <div style="text-align:left">
-                            <br>
-                            <h3>Django-Based Web Application:</h3>
+                    <h3>AI-Powered Support</h3>
+                    Connected the OpenAI API via Django to assist users with intelligent troubleshooting and context-aware, domain-specific support for product compatibility, diagnostics, and selection.
+                    <img src="Project/ecommerce_AI-tool.png" alt="AI support tool" />
 
-                            Developed a responsive website to showcase car dealerships and user reviews using Django as the backend.
-                            <br>Designed and implemented dynamic pages, including dealer listings, reviews, and a form to submit user reviews.
-                            <br>
-                            <h3>Microservices Integration:</h3>
+                    <h3>Secure Checkout and Payments</h3>
+                    Implemented Stripe for secure payment processing integrated directly into the Django backend. All transactions and orders are securely stored and associated with user accounts.
 
-                            Integrated a Node.js Express microservice to manage dealers and reviews stored in MongoDB.
-                            <br>Leveraged Django proxy services for seamless communication between the website and backend microservices.
-                            <br>
-                            <h3>Sentiment Analysis:</h3>
+                    <h3>Deployment in Industrial Environments</h3>
+                    Deployed the platform on a Raspberry Pi using Docker containers for resource-efficient local hosting, with Cloudflare Tunnel for DDoS protection and automatic SSL.
 
-                            Deployed a custom Sentiment Analyzer microservice on IBM Cloud Code Engine.
-                            <br>Implemented sentiment scoring to analyze user-submitted reviews (positive, negative, or neutral).
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS, Redux</li>
+                        <li><strong>Backend:</strong> Django REST Framework, PostgreSQL</li>
+                        <li><strong>Search Service:</strong> Node.js + Express with MongoDB</li>
+                        <li><strong>AI:</strong> OpenAI API integration for customer support</li>
+                        <li><strong>Payments:</strong> Stripe integration for secure checkout</li>
+                        <li><strong>Deployment:</strong> Docker, Cloudflare Tunnel, Kubernetes, Raspberry Pi</li>
+                    </ul>
 
-                            <h3>Authentication and User Management:</h3>
-
-                            Integrated Django's authentication system for secure user management.
-                            <br>Built a React-based front-end for an improved user experience.
-                            <br>
-                            <h3>Advanced Features:</h3>
-
-                            Dockerized backend services to enhance deployment and scalability.
-                            <br>Deployed the application on Kubernetes with continuous integration (CI/CD) pipelines for testing and linting.
-                            <br>
-                            <h3>Data Management:</h3>
-
-                            Used SQLite for storing car models and makes within Django.
-                            <br>Enabled real-time tracking of dealership and review data through custom APIs
-                        </div>
-                        <img src="Project/capstone-dealership-architecture.png" style="margin:10px" />
-                        <p>Note: some services have been taken down so there may be some loss of functionality</p>
-                    </div>
-                    <div class="navbar-item">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://application-af.1nwwngrynv7v.us-south.codeengine.appdomain.cloud">See Project </a>
-                    </div>
-
-                    <h4>Paradise Nursery Shopping Application</h4>
-                    <p style="text-align:left">
-                        <br><b>React Components:</b> Uses functional React components using component composition and nesting.
-                        <br>
-                        <br><b>State Management with Hooks:</b> Implemented React Hooks, specifically the useState and useEffect hooks.
-                        <br>Managed component-level state using hooks to control the visibility of elements.
-                        <br>
-                        <br><b>Redux Integration:</b> Integrate Redux within an application using Redux concepts like actions, reducers, and the store.
-                        <br>
-                        <br><b>Rendering Dynamic Data:</b> Dynamically renders data fetched from an array of objects into the UI.
-                        <br>Mapped over arrays to generate lists of components.
-                        <br>
-                        <br><b>Handles Events and Conditional Rendering:</b> Handles user events such as button selection and trigger corresponding actions.
-                    </p>
-                    <img src="Project/e-plant.png" style="margin:10px" />
-                    <div class="navbar-item">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="https://camerondietz.github.io/e-plantShopping/">See Project </a>
-                    </div>
-                    <h4>Other Projects</h4>
-
-                    <div class="project-videos" style="align-items: center;">
-                    <video autoplay muted loop playsinline>
-                        <source src="Project/decibel214.mp4" type="video/mp4">
-                    </video>
-
-                    <video autoplay muted loop playsinline>
-                        <source src="Project/invitational.mp4" type="video/mp4">
-                    </video>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://aventrek.com">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/web-application">Source</a>
+                        <a class="btn" href="Pages/aventrek.html">Details</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="accordion-item">
-                <h3 class="accordion-title">Data Analytics</h3>
-                <div class="accordion-content">
-                    <p style="text-align:left">
-                        This project focused on analyzing an HR dataset to uncover insights into employee retention and build predictive models for identifying key turnover factors. Initial data exploration included loading a 14,999-row dataset, renaming columns for clarity, and removing 3,008 duplicate rows. Missing values were checked, and data types were reviewed to ensure proper preprocessing.
-                        <br> <br>
-                        <b>Key Analysis Steps and Visualizations:</b><br>
-                        1. Outlier Detection: Using boxplots and IQR, 824 outliers in tenure were flagged (outside 1.5-5.5 years).<br>
-                        2. Retention Analysis: Analysis of the left column revealed 16.6% of employees had left. Visualizations like boxplots, histograms, and scatter plots highlighted trends in project counts, average monthly hours, and satisfaction levels, showing that higher workloads increased turnover.<br>
-                        3. Tenure and Salary Insights: Tenure distribution showed lower satisfaction (mean: 0.44) for those who left, compared to retained employees (mean: 0.67). Histograms segmented by tenure and salary indicated higher turnover among short-tenured, low-salary employees.<br>
-                        4. Department Retention Trends: Counts of stayed/left employees across departments revealed varied retention rates, emphasizing the need for department-specific strategies.<br>
-                        <br> <br>
-                        <b>Data Preparation for Modeling:</b><br>
-                        • Salary was encoded ordinally, and departments were dummy-encoded for model compatibility.<br>
-                        • A correlation heatmap identified significant predictors like satisfaction level and average monthly hours.<br>
-                        • Outliers were removed for a clean dataset used in logistic regression modeling.<br>
-                        • The dataset is split into training (X_train, y_train) and testing (X_test, y_test) sets using train_test_split() with a 25% test size, stratified on y to maintain the target distribution, and a random_state for reproducibility.<br>
-                        <br> <br>
-                        <b>Predictive Modeling Highlights:</b><br>
-                        <b>1. Logistic Regression:</b><br>
-                        ○ A logistic regression model log_clf is instantiated with random_state=42 and max_iter=500 and fitted on the training data.<br>
-                        ○ Precision, recall, f1-score, and support for both classes: employees predicted to stay and to leave.<br>
-                        ○ The overall accuracy is 82%, with a macro average f1-score of 0.61, showing lower performance for predicting employees who left (precision 0.44, recall 0.26).<br>
-                        <b>2. Decision Tree Classifier:</b><br>
-                        ○ Optimized with GridSearchCV, resulting in best parameters: max_depth=6, min_samples_leaf=2, min_samples_split=6.<br>
-                        ○ Achieved an AUC score of 0.9587, with precision at 0.857 and recall at 0.904, confirming reliable detection of turnover.<br>
-                        <b>3. Random Forest Classifier:</b><br>
-                        ○ Hyperparameters (max_depth=5, n_estimators=300, max_samples=0.7) were found through optimization.<br>
-                        ○ Reached an AUC of 0.9648, slightly outperforming the decision tree.<br>
-                        ○ Feature importance analysis showed satisfaction level, average monthly hours, and tenure as top predictors.<br>
-                        <br> <br>
-                        <b>Interpretability and Insights:</b><br>
-                        • Visual plots of feature importances from both models identified key factors driving employee retention.<br>
-                        • Important features were plotted based on Gini importance, with results suggesting that factors like satisfaction level, average monthly hours, and tenure play significant roles in determining employee turnover.<br>
-                        <br> <br>
-                        Overall, this analysis utilized the effective use of data exploration, visualization and machine learning techniques to model company data such as employee retention, providing actionable insights for HR strategies aimed at reducing turnover. The results underscore the importance of job satisfaction, workload, and tenure in predicting employee departure, offering a data-driven approach to HR management.<br>
-
-                    </p>
-                    <div class="navbar-item">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/DataAnalytics.html">See Project </a>
+            <!-- Applied Industrial CRM -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Internal Tool</span>
+                    <img src="Project/Database_menu.png" alt="Applied Industrial Technologies CRM" loading="lazy" />
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Database &amp; CRM &mdash; Applied Industrial Technologies <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Custom Access/SQL/VBA system managing 12,500+ parts, automated quoting, and live business dashboards.</p>
+                    <div class="project-tags">
+                        <span>MS Access</span><span>SQL</span><span>VBA</span><span>Dashboards</span>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-title">Application development - C++</h3>
-                <div class="accordion-content">
-                    <p style="text-align:left">
-                        This program was created using C++ to map the most efficient route through land using topographical map data.
-                        This code reads elevation data from a file, processes it into a grayscale image in PPM format, and highlights the optimal path across the map using color. Here’s a section-by-section summary:
-                        <br> <br>
-                        <b>Input Handling:</b> The program asks for the number of rows, columns, and the input file name containing elevation data. The file is validated, and if accessible, it's opened for reading.
-                        <br> <br>
-                        <b>Data Processing:</b> Elevation values are read, stored in a 2D vector dat, and then min/max values are calculated to scale elevation to grayscale.
-                        <br> <br>
-                        <b>Grayscale Mapping:</b> Each elevation value is mapped to a grayscale intensity (0-255) and stored in RGB vectors r, g, and b.
-                        <br> <br>
-                        <b>Path Coloring:</b> Using the colorPath function, the program determines the least elevation-change path across the map. Paths are highlighted with specified RGB colors for visualization, and the shortest path is colored separately in bright green.
-                        <br> <br>
-                        <b>Output Image Creation:</b> The program outputs a PPM file containing the pixel data, where each pixel's RGB values are either grayscale or the highlight color for paths.
-                    </p>
-                    <img src="html_finalprojimages/Map.png" style="margin:10px" />
-                    <div class="navbar-item">
-                        <a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="Pages/MapRouteCode.pdf">See Project </a>
+                <div class="project-detail">
+                    <p><b>Database Management:</b> Designed and implemented a comprehensive database in Microsoft Access to manage and streamline data for over 6,500 parts including purchasing, vendor, and quoting information. Ensured data integrity and optimized performance through careful schema design and indexing.</p>
+                    <p><b>Automation &amp; Efficiency:</b> Developed and deployed SQL queries and VBA scripts to automate routine tasks &mdash; data sorting, filtering, extraction, report generation, email distribution, and file management &mdash; significantly reducing manual effort.</p>
+                    <p><b>Data Analysis &amp; Visualization:</b> Built a dynamic dashboard to track key business metrics in real time, supporting strategic decision-making.</p>
+                    <p><b>Process Improvement:</b> Continuously refined database architecture and processes to accommodate growing data needs and improve scalability.</p>
+                    <img src="Project/Database_menu.png" alt="Database menu" />
+                    <img src="Project/Database_part.png" alt="Database part view" />
+                    <div class="project-actions">
+                        <a class="btn" href="Pages/AccessProject.html">Details</a>
                     </div>
                 </div>
-            </div>
+            </article>
+
+            <!-- Car Dealership / web app -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Microservices</span>
+                    <img src="Project/capstone-dealership-architecture.png" alt="Car dealership review application" loading="lazy" />
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Car Dealership Review Application <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Django + Node microservices with sentiment analysis and React front-end, deployed on Kubernetes.</p>
+                    <div class="project-tags">
+                        <span>Django</span><span>React</span><span>Node</span><span>MongoDB</span><span>Kubernetes</span><span>IBM Cloud</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <p>Constructed a complete web application for a national car dealership that allows new and existing customers to look up branches by state and read customer reviews.</p>
+
+                    <h3>Django-Based Web Application</h3>
+                    Developed a responsive site to showcase car dealerships and user reviews using Django. Designed dynamic pages for dealer listings, reviews, and review submission.
+
+                    <h3>Microservices Integration</h3>
+                    Integrated a Node.js Express microservice to manage dealers and reviews stored in MongoDB. Leveraged Django proxy services for seamless communication.
+
+                    <h3>Sentiment Analysis</h3>
+                    Deployed a custom Sentiment Analyzer microservice on IBM Cloud Code Engine to score user-submitted reviews.
+
+                    <h3>Auth, Front-End &amp; Deployment</h3>
+                    Integrated Django's auth system, built a React-based front-end, Dockerized backend services, and deployed on Kubernetes with CI/CD pipelines for testing and linting.
+
+                    <img src="Project/capstone-dealership-architecture.png" alt="Architecture diagram" />
+                    <p style="font-size:0.85rem;opacity:0.8">Note: some services have been taken down so there may be some loss of functionality.</p>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://application-af.1nwwngrynv7v.us-south.codeengine.appdomain.cloud">Live site</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Data Analytics -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Data / ML</span>
+                    <img src="Project/RandomForest.png" alt="HR analytics ML project" loading="lazy" />
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">HR Analytics &amp; Predictive Modeling <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">EDA and Random Forest model (AUC 0.96) on a 15K-row HR dataset to identify turnover drivers.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>EDA</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <p>Analyzed a 14,999-row HR dataset to uncover insights into employee retention and build predictive models for identifying key turnover factors. Removed 3,008 duplicates, flagged 824 tenure outliers with IQR, and validated data types and missing values during preprocessing.</p>
+
+                    <h3>Key Analysis Steps</h3>
+                    <ul>
+                        <li><b>Retention analysis:</b> 16.6% of employees had left. Boxplots, histograms, and scatter plots highlighted that higher workloads increased turnover.</li>
+                        <li><b>Tenure &amp; salary insights:</b> Lower satisfaction (mean 0.44) for those who left vs. 0.67 for retained employees. Higher turnover among short-tenured, low-salary employees.</li>
+                        <li><b>Department trends:</b> Counts revealed varied retention rates, indicating need for department-specific strategies.</li>
+                    </ul>
+
+                    <h3>Predictive Modeling</h3>
+                    <ul>
+                        <li><b>Logistic Regression:</b> 82% accuracy, macro F1 0.61.</li>
+                        <li><b>Decision Tree (GridSearchCV tuned):</b> AUC 0.9587, precision 0.857, recall 0.904.</li>
+                        <li><b>Random Forest:</b> AUC 0.9648 &mdash; top features were satisfaction level, average monthly hours, and tenure.</li>
+                    </ul>
+
+                    <p>Results underscore the importance of job satisfaction, workload, and tenure in predicting employee departure &mdash; offering a data-driven approach to HR management.</p>
+                    <div class="project-actions">
+                        <a class="btn" href="Pages/DataAnalytics.html">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- EmerOps -->
+            <article class="project-card">
+                <div class="project-media">
+                    <span class="project-badge">Full Stack</span>
+                    <img src="Project/osint-dashboard.png" alt="Aventrek ecommerce platform" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src="Project/osint.mp4"></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Emergency Operations Dashboard <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Full-stack industrial parts marketplace with AI support, Stripe checkout, and edge deployment.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>MongoDB</span><span>OpenAI</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Emergency Operations Center Dashboard</h3>
+                    Designed and developed a real-time emergency operations and OSINT intelligence dashboard for disaster response coordination, infrastructure monitoring, and situational awareness.
+                    Built a multi-panel command center interface aggregating live emergency data feeds, weather intelligence, infrastructure monitoring, transportation tracking, financial indicators, and global event reporting into a unified operational platform.
+                    Focused heavily on rapid information visibility, low-latency updates, and operational usability during high-stress emergency response scenarios.
+                    <!-- <img src="Project/osint-dashboard.png" alt="Emergency operations center dashboard interface" /> -->
+                    
+                    <h3>Real-Time Intelligence and Monitoring</h3>
+                    Integrated live aviation, maritime, roadway, weather, seismic, outage, and emergency alert feeds using public APIs, embedded data services, and real-time data polling.
+                    Developed live monitoring systems for NOAA weather alerts, USGS earthquake activity, ERCOT grid conditions, RSS intelligence aggregation, and infrastructure outage tracking.
+                    Implemented dynamic dashboards for tracking global events, disease outbreaks, severe weather, transportation systems, and emergency communications.
+                    
+                    <h3>OSINT and Situational Awareness Features</h3>
+                    Built an operational intelligence environment incorporating live news streaming, police and fire radio feeds, market intelligence, geospatial traffic visualization, and emergency information aggregation.
+                    Integrated multiple OSINT resources including ADS-B Exchange, MarineTraffic, GDELT, Broadcastify, PurpleAir, Weather Underground, TxDOT traffic systems, and NOAA weather infrastructure.
+                    Designed modular intelligence panels capable of rapidly adapting to evolving disaster response requirements and emerging information sources.
+                    <img src="Project/osint-dashboard.png" alt="OSINT intelligence and monitoring panels" />
+                    
+                    <h3>Frontend Engineering and System Architecture</h3>
+                    Engineered the platform using HTML, CSS, and JavaScript with a modular panel-based architecture optimized for large-scale dashboard rendering and real-time updates.
+                    Developed custom polling systems, timezone synchronization engines, uptime monitoring, feed aggregation logic, and dynamic content rendering systems.
+                    Implemented responsive operational layouts supporting large displays, command center environments, and multi-monitor emergency operations deployments.
+                    
+                    <h3>Data Aggregation and Live Systems</h3>
+                    Created custom JavaScript systems for:
+                    <ul>
+                        <li>Live RSS feed aggregation and categorization</li>
+                        <li>NOAA and NWS weather alert processing</li>
+                        <li>USGS earthquake monitoring and visualization</li>
+                        <li>Live HLS news streaming integration</li>
+                        <li>Infrastructure and outage monitoring</li>
+                        <li>Financial market intelligence tracking</li>
+                        <li>Global timezone synchronization systems</li>
+                        <li>Operational uptime and alert monitoring</li>
+                    </ul>
+                    
+                    <h3>Operational Design Philosophy</h3>
+                    Designed the interface around emergency management workflows emphasizing rapid scanning, visual hierarchy, dark-mode operational readability, and information density.
+                    Focused on creating a centralized situational awareness platform capable of assisting humanitarian organizations, disaster response teams, and emergency coordination personnel during active incidents.
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Data Sources:</strong> NOAA, NWS, USGS, GDELT, Broadcastify, RSS Feeds, TradingView APIs</li>
+                        <li><strong>Streaming:</strong> HLS.js, Live Video Embeds, YouTube Integration</li>
+                        <li><strong>OSINT:</strong> ADS-B Exchange, MarineTraffic, TxDOT, PurpleAir, ReliefWeb</li>
+                        <li><strong>Architecture:</strong> Real-Time Dashboard Systems, Feed Aggregation, Modular UI Panels</li>
+                        <li><strong>Features:</strong> Live Alerts, Infrastructure Monitoring, Situational Awareness, Emergency Intelligence</li>
+                        <li><strong>Deployment:</strong> Browser-Based Command Center Interface</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://camerondietz.github.io/OSINT-DASHBOARD/sentinel-dashboard.html">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/OSINT-DASHBOARD">Source</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- C++ Map -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">C++</span>
+                    <img src="html_finalprojimages/Map.png" alt="C++ topographical map route" loading="lazy" />
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Topographical Pathfinder &mdash; C++ <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Reads elevation data, renders a grayscale PPM map, and overlays the least-elevation-change path.</p>
+                    <div class="project-tags">
+                        <span>C++</span><span>Algorithms</span><span>Image Processing</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <p>C++ program that maps the most efficient route through terrain using topographical map data. Reads elevation values, processes them into a grayscale PPM image, and highlights the optimal path.</p>
+                    <p><b>Input handling:</b> Prompts for rows, columns, and the input file; validates and opens the file for reading.</p>
+                    <p><b>Data processing:</b> Stores elevations in a 2D vector and computes min/max for grayscale scaling.</p>
+                    <p><b>Grayscale mapping:</b> Maps each elevation to a 0&ndash;255 intensity stored in RGB vectors.</p>
+                    <p><b>Path coloring:</b> A <code>colorPath</code> function determines the least-elevation-change path and overlays it; the shortest is rendered in bright green.</p>
+                    <p><b>Output:</b> Writes a PPM file with grayscale terrain and colored overlay paths.</p>
+                    <img src="html_finalprojimages/Map.png" alt="Map output" />
+                    <div class="project-actions">
+                        <a class="btn" href="Pages/MapRouteCode.pdf">Source PDF</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Trumodern Esthetics -->
+            <article class="project-card">
+                <div class="project-media">
+                    <span class="project-badge">Frontend</span>
+                    <img src="Project/trumodern-hero.png" alt="Trumodern Esthetics" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src="Project/Trumodern.mp4"></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Trumodern Esthetics<span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Frontend website with amazing UI and SEO to help a company succeed</p>
+                    <div class="project-tags">
+                        <span>Github</span><span>HTML</span><span>CSS</span><span>SEO</span><span>JS</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Trumodern Esthetics Website</h3>
+                    Designed and developed a luxury skincare and esthetics website focused on elegant branding, immersive visuals, and high-conversion client booking experiences.
+                    Built a fully responsive single-page experience using semantic HTML5, modern CSS architecture, and performance-focused frontend practices.
+                    Implemented custom sections for featured facial treatments, esthetician introductions, service showcases, FAQs, and mobile-first navigation.
+                    Integrated external booking functionality through Square to streamline appointment scheduling and improve client conversion.
+                    <img src="Project/trumodern-hero.png" alt="Trumodern Esthetics hero section" />
+                    
+                    <h3>Luxury Frontend Experience</h3>
+                    Crafted a premium visual identity using modern typography, cinematic layouts, smooth scrolling interactions, and layered imagery.
+                    Optimized the user experience across desktop and mobile devices with responsive grids, animated reveal effects, accessible navigation, and fast-loading media.
+                    Implemented SEO-focused metadata, Open Graph integration, structured schema markup, and semantic accessibility standards to improve discoverability and search performance.
+                    
+                    <h3>Branding and User Experience</h3>
+                    Developed a calm, modern design language tailored to the luxury skincare industry, emphasizing trust, comfort, and professionalism.
+                    Created dedicated sections for Hydrafacial treatments, acne care, chemical peels, brow shaping, and dermaplaning to clearly communicate services and benefits.
+                    Designed the interface to guide users naturally toward booking actions while maintaining a clean editorial aesthetic.
+                    <img src="Project/trumodern-services.png" alt="Trumodern Esthetics services section" />
+                    
+                    <h3>Performance and Optimization</h3>
+                    Optimized loading performance using responsive images, lazy-loading techniques, lightweight assets, and efficient CSS organization.
+                    Implemented structured JSON-LD schema for local SEO and enhanced search engine visibility.
+                    Configured mobile-friendly layouts and touch-optimized interactions for seamless browsing on smartphones and tablets.
+                    
+                    <h3>Deployment and Integration</h3>
+                    Integrated third-party booking systems, social media links, and modern web metadata standards for a polished production-ready deployment.
+                    Designed the site architecture to support future scalability including online skincare product sales, blog content, and advanced booking integrations.
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Design:</strong> Responsive Design, Modern UI/UX, Mobile-First Layouts</li>
+                        <li><strong>SEO:</strong> Open Graph, Structured Data (JSON-LD), Semantic HTML</li>
+                        <li><strong>Integrations:</strong> Square Booking, Instagram</li>
+                        <li><strong>Performance:</strong> Lazy Loading, Optimized Media, Accessibility Enhancements</li>
+                        <li><strong>Deployment:</strong> Production Web Hosting, Mobile Optimization</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://aventrek.com">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/web-application">Source</a>
+                        <a class="btn" href="Pages/aventrek.html">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Austin Reviews -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Next.js</span>
+                    <img src="Project/reviews-home.png" alt="Austin Reviews" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Next.js Frontend &mdash; Austin Reviews <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Full-stack industrial parts marketplace with AI support, Stripe checkout, and edge deployment.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>SEO</span><span>Schema</span><span>UI Design</span><span>React</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Austin Reviews Website</h3>
+                    Designed and developed a high-performance local discovery platform for exploring businesses, services, and destinations throughout Austin, Texas.
+                    Built the website using Next.js static output generation to maximize speed, scalability, and SEO performance while reducing hosting overhead.
+                    Implemented dynamic filtering and searchable category navigation to help users quickly discover restaurants, shops, entertainment, and local services.
+                    <img src="Project/austinreviews-home.png" alt="Austin Reviews homepage" />
+                    
+                    <h3>Search and Taxonomy System</h3>
+                    Developed a structured node-based taxonomy architecture to organize businesses across nested categories, tags, and local interest groupings.
+                    Implemented fast client-side filtering and search functionality for seamless browsing across large business datasets.
+                    Created scalable content relationships allowing businesses to appear across multiple discovery paths and category structures.
+                    
+                    <h3>SEO and Performance Optimization</h3>
+                    Optimized the platform for strong search engine visibility using static site generation, semantic HTML, metadata management, and structured page hierarchy.
+                    Implemented clean URL structures, Open Graph metadata, responsive layouts, and optimized asset delivery to improve indexing and user engagement.
+                    Focused heavily on Core Web Vitals, accessibility standards, and mobile-first responsiveness for reliable performance across devices.
+                    <img src="Project/austinreviews-search.png" alt="Austin Reviews search and filtering interface" />
+                    
+                    <h3>User Experience and Frontend Design</h3>
+                    Built responsive interfaces with smooth navigation, intuitive filtering systems, and modern card-based business layouts.
+                    Designed the platform to support fast exploration of local businesses while maintaining a lightweight, highly performant browsing experience.
+                    Created reusable frontend components for categories, listings, reviews, featured businesses, and recommendation sections.
+                    
+                    <h3>Static Deployment Architecture</h3>
+                    Leveraged Next.js static output/build functionality for efficient deployment and CDN-friendly hosting.
+                    Designed the application architecture for future scalability including user reviews, ratings, geolocation features, and sponsored listings.
+                    Maintained a lightweight deployment strategy optimized for rapid page delivery and low infrastructure requirements.
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> Next.js, TypeScript, React</li>
+                        <li><strong>Architecture:</strong> Static Site Generation (SSG), Static Output Build</li>
+                        <li><strong>Search:</strong> Client-Side Filtering and Search Functionality</li>
+                        <li><strong>SEO:</strong> Semantic HTML, Structured Metadata, Open Graph Optimization</li>
+                        <li><strong>Data Structure:</strong> Node-Based Taxonomy and Category Hierarchies</li>
+                        <li><strong>Performance:</strong> Responsive Design, Optimized Assets, Core Web Vitals Optimization</li>
+                        <li><strong>Deployment:</strong> Static Hosting and CDN Distribution</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://aventrek.com">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/web-application">Source</a>
+                        <a class="btn" href="Pages/aventrek.html">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TigerTotes -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Full Stack</span>
+                    <img src="Project/ecommerce_products.png" alt="Aventrek ecommerce platform" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Tiger Totes <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Full-stack industrial parts marketplace with AI support, Stripe checkout, and edge deployment.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>MongoDB</span><span>OpenAI</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Industrial E-Commerce Platform</h3>
+                    Designed and built a full-stack platform for selling industrial parts with a focus on reliability, performance, and ease of use.
+                    Utilized Django and PostgreSQL for robust backend logic, secure APIs, and transactional integrity.
+                    Integrated a MongoDB-powered Node.js microservice to handle fast, unstructured product search and filtering.
+                    <img src="Project/ecommerce_products.png" alt="Ecommerce products view" />
+
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS, Redux</li>
+                        <li><strong>Backend:</strong> Django REST Framework, PostgreSQL</li>
+                        <li><strong>Search Service:</strong> Node.js + Express with MongoDB</li>
+                        <li><strong>AI:</strong> OpenAI API integration for customer support</li>
+                        <li><strong>Payments:</strong> Stripe integration for secure checkout</li>
+                        <li><strong>Deployment:</strong> Docker, Cloudflare Tunnel, Kubernetes, Raspberry Pi</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://aventrek.com">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/web-application">Source</a>
+                        <a class="btn" href="Pages/aventrek.html">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Health and Wellness -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">Frontend</span>
+                    <img src="Project/health-home.png" alt="Health Frontend" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Frontend Website &mdash; Healthy Living <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Complete Web-page for a halth and wellness brand offering advice and information on a healthy lifestyle</p>
+                    <div class="project-tags">
+                        <span>UI Design</span><span>SEO</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Oakwell Health & Wellness Website</h3>
+                    Designed and developed a modern health and wellness platform focused on practical, research-driven lifestyle education across fitness, nutrition, recovery, sleep, skincare, and preventative health.
+                    Built the website using semantic HTML5, custom CSS architecture, and vanilla JavaScript for lightweight performance and broad device compatibility.
+                    Created an editorial-style user experience emphasizing readability, calm visual design, and structured educational content.
+                    <img src="Project/oakwell-home.png" alt="Oakwell health and wellness homepage" />
+                    
+                    <h3>Educational Content Architecture</h3>
+                    Structured the platform around wellness “pillars” including movement, nutrition, hydration, sleep, hygiene, air quality, skincare, and recovery.
+                    Developed scalable page templates for long-form educational articles, health guides, workout plans, and wellness resources.
+                    Implemented intuitive navigation systems and internal linking structures to improve content discovery and user retention.
+                    
+                    <h3>Frontend Design and User Experience</h3>
+                    Designed responsive layouts with modern typography, glassmorphism-inspired UI elements, and smooth reveal animations to create a premium reading experience.
+                    Focused heavily on accessibility, readability, and mobile-first interaction patterns for users consuming educational content across devices.
+                    Built reusable styling systems and modular content sections for efficient scalability across dozens of wellness topics.
+                    <img src="Project/oakwell-workout.png" alt="Oakwell workout and movement section" />
+                    
+                    <h3>SEO and Performance Optimization</h3>
+                    Implemented strong SEO foundations using semantic HTML, metadata optimization, canonical URLs, Open Graph integration, and structured content hierarchy.
+                    Optimized page speed through lightweight JavaScript usage, efficient CSS organization, optimized assets, and minimal frontend overhead.
+                    Designed the site architecture to support long-term organic search growth across health and wellness search categories.
+                    
+                    <h3>Interactive Features</h3>
+                    Developed responsive navigation systems, animated content reveals, educational statistics components, and dynamic UI interactions using vanilla JavaScript.
+                    Created scalable article systems capable of supporting future integrations such as workout trackers, meal plans, personalized wellness programs, and health calculators.
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Design:</strong> Responsive Design, Glassmorphism UI, Mobile-First Layouts</li>
+                        <li><strong>SEO:</strong> Semantic HTML, Open Graph Metadata, Canonical URL Optimization</li>
+                        <li><strong>Performance:</strong> Lightweight Frontend Architecture, Optimized Assets</li>
+                        <li><strong>UX:</strong> Long-Form Educational Content Design, Accessibility Enhancements</li>
+                        <li><strong>Deployment:</strong> Static Web Hosting</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://aventrek.com">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/web-application">Source</a>
+                        <a class="btn" href="Pages/aventrek.html">Details</a>
+                    </div>
+                </div>
+            </article>
+
+             <!-- Decibel214 -->
+            <article class="project-card">
+                <div class="project-media">
+                    <span class="project-badge">Full Stack</span>
+                    <img src="Project/decibel214-hero.png" alt="Website for local band" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src="Project/decibel214.mp4"></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Web Design &mdash; Decibel214 <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Built a webpage for a band out of the Cypress, TX area</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>Web Design</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Decibel 214 Band Website</h3>
+                    Designed and developed a promotional website for Decibel 214, a Texas-based hard rock cover band focused on live performance promotion, media presentation, and booking inquiries.
+                    Built a visually immersive frontend experience centered around cinematic video backgrounds, live show promotion, band branding, and responsive media presentation.
+                    Created a modern single-page layout optimized for fan engagement, venue promotion, and mobile-friendly browsing.
+                    <img src="Project/decibel214-hero.png" alt="Decibel 214 band website hero section" />
+                    
+                    <h3>Frontend Design and Media Experience</h3>
+                    Developed the website using HTML5, CSS3, JavaScript, and Bootstrap 5 to create responsive layouts and polished interactive components.
+                    Implemented a full-screen hero video system with layered overlays, immersive typography, and high-impact branding visuals.
+                    Designed dynamic media galleries using Bootstrap carousel systems to showcase live performances, band photography, and promotional content.
+                    <img src="Project/decibel214-media.png" alt="Decibel 214 media carousel and gallery" />
+                    
+                    <h3>Booking and Event Promotion</h3>
+                    Built dedicated sections for upcoming shows, venue information, and direct booking inquiries to streamline communication with fans and event organizers.
+                    Integrated responsive contact systems with email, phone, and social media connectivity for simplified booking and promotional outreach.
+                    Focused heavily on clear call-to-action placement and mobile usability for users discovering the band through social platforms and live events.
+                    
+                    <h3>Responsive UI and User Experience</h3>
+                    Designed a dark-themed visual identity inspired by live music venues, concert environments, and modern rock branding aesthetics.
+                    Implemented responsive navigation systems, smooth scrolling layouts, adaptive media rendering, and mobile-first optimization across all screen sizes.
+                    Utilized Bootstrap utility systems and custom CSS enhancements to maintain consistency while allowing rapid frontend customization.
+                    
+                    <h3>Performance and Accessibility</h3>
+                    Optimized media presentation for fast loading while maintaining high visual impact through responsive image handling and lightweight frontend architecture.
+                    Implemented accessible navigation patterns, semantic HTML structure, and scalable component organization for maintainability and future expansion.
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Frameworks:</strong> Bootstrap 5, Bootstrap Icons</li>
+                        <li><strong>Media:</strong> Fullscreen Video Backgrounds, Image Carousel Systems</li>
+                        <li><strong>Design:</strong> Responsive Design, Dark Theme UI, Mobile-First Layouts</li>
+                        <li><strong>Features:</strong> Event Promotion, Booking Contact Integration, Social Media Links</li>
+                        <li><strong>Performance:</strong> Optimized Media Rendering, Responsive Components</li>
+                        <li><strong>Deployment:</strong> Static Web Hosting</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://camerondietz.github.io/decibel214/">Live site</a>
+                        <a class="btn" href="https://github.com/Camerondietz/decibel214">Source</a>
+                    </div>
+                </div>
+            </article>
+
+             <!-- American Foundation -->
+            <article class="project-card">
+                <div class="project-media">
+                    <span class="project-badge">Full Stack</span>
+                    <img src="Project/charity-hero.png" alt="Aventrek ecommerce platform" loading="lazy" />
+                    <!-- Drop a preview .mp4 in /Project and add <source> below to enable hover-to-play -->
+                    <video muted loop playsinline preload="none" data-src="Project/charity.mp4"></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Frontend Design &mdash; American Society Foundation <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">Full-stack industrial parts marketplace with AI support, Stripe checkout, and edge deployment.</p>
+                    <div class="project-tags">
+                        <span>Next.js</span><span>Django</span><span>PostgreSQL</span><span>MongoDB</span><span>OpenAI</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h3>Civitas Foundation Civic Platform</h3>
+                    Designed and built a modern nonprofit and civic education platform focused on constitutional literacy, public safety, moral philosophy, and community preparedness.
+                    Created a scalable multi-page architecture for educational content, long-form articles, organizational initiatives, and emergency response integration.
+                    Developed a refined institutional visual identity emphasizing clarity, accessibility, and trust through responsive layouts and structured information design.
+                    Integrated educational resources, safety guides, article systems, and dedicated emergency operations pathways into a cohesive public-facing platform.
+                    <img src="Project/charity-hero.png" alt="Civitas Foundation website" />
+                    
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Design:</strong> Responsive layouts, semantic HTML, accessibility-first structure</li>
+                        <li><strong>Content Systems:</strong> Dynamic JSON-fed article and values rendering</li>
+                        <li><strong>Branding:</strong> Custom UI system, typography hierarchy, institutional design language</li>
+                        <li><strong>SEO:</strong> Open Graph metadata, JSON-LD structured organization schema</li>
+                        <li><strong>Focus Areas:</strong> Civic education, public information, emergency preparedness</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="btn btn-primary"https://camerondietz.github.io/Charity-Frontend/">Live site</a>
+                        <a class="btn" href="https://github.com/Charity-Frontend">Source</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Paradise Nursery -->
+            <article class="project-card">
+                <div class="project-media-2">
+                    <span class="project-badge">React + Redux</span>
+                    <img src="Project/e-plant.png" alt="Paradise Nursery shopping app" loading="lazy" />
+                    <video muted loop playsinline preload="none" data-src=""></video>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Paradise Nursery Shopping App <span class="chev"><i class="fas fa-chevron-down"></i></span></h3>
+                    <p class="project-tagline">React shopping experience built with hooks and Redux for cart, filtering, and state.</p>
+                    <div class="project-tags">
+                        <span>React</span><span>Redux</span><span>Hooks</span>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <p><b>React Components:</b> Functional React components using composition and nesting.</p>
+                    <p><b>State Management with Hooks:</b> useState and useEffect for component-level state controlling visibility and behavior.</p>
+                    <p><b>Redux Integration:</b> Actions, reducers, and store managing global cart state.</p>
+                    <p><b>Dynamic Rendering:</b> Mapped arrays of objects to generate dynamic lists of components.</p>
+                    <p><b>Events &amp; Conditional Rendering:</b> User events trigger Redux actions and update UI conditionally.</p>
+                    <img src="Project/e-plant.png" alt="Paradise Nursery screenshot" />
+                    <div class="project-actions">
+                        <a class="btn btn-primary" href="https://camerondietz.github.io/e-plantShopping/">Live site</a>
+                    </div>
+                </div>
+            </article>
 
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contact-container">
-	        <a href="Cameron Dietz.vcf" class="contact-icon" title="Contact Card"><i class="fa fa-address-card"></i></a>
-            <a href="https://www.linkedin.com/in/dietzcameron" title="Linkedin" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Camerondietz" title="Github" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>    
+            <a href="Cameron Dietz.vcf" class="contact-icon" title="Contact Card"><i class="fa fa-address-card"></i></a>
+            <a href="https://www.linkedin.com/in/dietzcameron" title="LinkedIn" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Camerondietz" title="GitHub" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
             <a href="mailto:dietz.cameron@gmail.com" title="Email" class="contact-icon"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Cameron Dietz</p>
+        <p>&copy; 2026 Cameron Dietz</p>
     </footer>
 
     <script src="script.js"></script>
